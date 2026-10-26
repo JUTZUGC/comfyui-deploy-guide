@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "comfyui-guide": {
+      "command": "node",
+      "args": [
+        "mcp-server.mjs"
+      ]
+    }
+  }
+}
