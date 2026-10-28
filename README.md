@@ -1,7 +1,7 @@
 # ComfyUI 一键安装指南
 
 > 第三方部署指南 · 非 ComfyUI 官方仓库。官方项目：[Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)
-> 内容来自官方文档（2026-10-26）。项目迭代快，请以[官方文档](https://docs.comfy.org)为准。
+> 内容来自官方文档（2026-10-28）。项目迭代快，请以[官方文档](https://docs.comfy.org)为准。
 
 [![⚡ 一键安装](https://img.shields.io/badge/%E2%9A%A1_%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85-%E6%8E%A8%E8%8D%90%E7%99%BE%E5%BA%A6%E6%90%AD%E5%AD%90-2ea44f?style=for-the-badge)](#一键安装推荐用百度搭子)
 
@@ -48,7 +48,7 @@ ComfyUI 是开源的节点式 AI 绘图工作流（本地推理）（协议：GP
 
 | 优点 | 说明 |
 |---|---|
-| 143k stars | GPL-3.0 开源，生态最大 |
+| 143.7k stars | GPL-3.0 开源，生态最大 |
 | 便携包免安装 | 解压即用，不污染系统 Python |
 | 社区工作流通用 | 看到的工作流基本都能直接导入 |
 | 本地推理 | 出图不上传，隐私可控 |
@@ -62,7 +62,7 @@ ComfyUI 是开源的节点式 AI 绘图工作流（本地推理）（协议：GP
 | 需要 7-Zip | 解压 7z 格式 |
 | 模型来源要自己找 | 官方不附带模型，注意来源与授权 |
 
-> 以上基于官方文档与社区反馈整理（2026-10-26），以官方最新文档为准。
+> 以上基于官方文档与社区反馈整理（2026-10-28），以官方最新文档为准。
 
 ## 官方安装方式（可手动执行）
 
@@ -76,7 +76,7 @@ echo "ComfyUI 便携包只提供 Windows 版本；macOS / Linux 请用官方桌�
 
 | 场景 | 状态 |
 |---|---|
-| Release v0.42.1 五个 Windows 便携包与 SHA256  digest 已核对 | 已核对 2026-10-26 |
+| Release v0.43.0 五个 Windows 便携包与 SHA256 digest 已核对 | 已核对 2026-10-28 |
 | 未下载安装（便携包 1.4–2 GB，本机网络不适合完整拉取） | 已核对 2026-10-26 |
 | MCP 服务握手与工具列表（initialize / tools/list） | 已验证 2026-10-26 |
 | 非目标宿主调用被拦截（HOST_NOT_ALLOWED） | 已验证 2026-10-26 |
@@ -87,7 +87,7 @@ echo "ComfyUI 便携包只提供 Windows 版本；macOS / Linux 请用官方桌�
 
 ComfyUI 本身不是 MCP server，但有第三方 MCP / API 封装。本仓库的 MCP 只提供下载、校验、解压与启动步骤。
 
-本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-26）。
+本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-28）。
 
 **在百度搭子里接入**：客户端不扫描仓库里的配置文件，需要由百度搭子通过工作区的 MCP 注册接口注册，并且必须使用**绝对路径**（运行时的工作目录是会话目录，不是仓库目录）：
 
@@ -138,5 +138,5 @@ ComfyUI 本身不是 MCP server，但有第三方 MCP / API 封装。本仓库�
 ## 免责声明
 
 本仓库为第三方指南，与 ComfyUI 官方无隶属关系，不代表官方立场。
-教程基于官方文档编写（更新日期：2026-10-26），项目迭代快，请以[官方文档](https://docs.comfy.org)为准。
+教程基于官方文档编写（更新日期：2026-10-28），项目迭代快，请以[官方文档](https://docs.comfy.org)为准。
 因使用本教程产生的部署问题，请先在官方仓库的 issue 中检索。

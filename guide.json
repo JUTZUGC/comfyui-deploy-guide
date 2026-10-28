@@ -8,7 +8,7 @@
     "oneLiner": "节点式 AI 绘图工作流（本地推理）",
     "officialRepo": "https://github.com/Comfy-Org/ComfyUI",
     "officialDocs": "https://docs.comfy.org",
-    "stars": "143k",
+    "stars": "143.7k",
     "license": "GPL-3.0",
     "highlights": [
       "节点式工作流：文生图、图生图、ControlNet、LoRA、放大、批量",
@@ -19,11 +19,11 @@
     "mcpSupport": "ComfyUI 本身不是 MCP server，但有第三方 MCP / API 封装。本仓库的 MCP 只提供下载、校验、解压与启动步骤。",
     "webuiUrl": "",
     "adapterPorts": "",
-    "collectedAt": "2026-10-26",
+    "collectedAt": "2026-10-28",
     "verification": [
       [
-        "Release v0.42.1 五个 Windows 便携包与 SHA256  digest 已核对",
-        "已核对 2026-10-26"
+        "Release v0.43.0 五个 Windows 便携包与 SHA256 digest 已核对",
+        "已核对 2026-10-28"
       ],
       [
         "未下载安装（便携包 1.4–2 GB，本机网络不适合完整拉取）",
@@ -44,8 +44,8 @@
         "echo \"ComfyUI 便携包只提供 Windows 版本；macOS / Linux 请用官方桌面版\" ; exit 1"
       ],
       "stepsPs": [
-        "curl.exe -L --fail -o ComfyUI_windows_portable_nvidia.7z https://github.com/Comfy-Org/ComfyUI/releases/download/v0.42.1/ComfyUI_windows_portable_nvidia.7z",
-        "$h = (Get-FileHash -Algorithm SHA256 ComfyUI_windows_portable_nvidia.7z).Hash.ToLower() ; if ($h -ne '496afd18790ec685d99ebba2edf200d7371a29fbdd3a992bb0f4f52f244a6874') { throw \"SHA256 校验失败，文件可能不完整，请重试\" }",
+        "curl.exe -L --fail -o ComfyUI_windows_portable_nvidia.7z https://github.com/Comfy-Org/ComfyUI/releases/download/v0.43.0/ComfyUI_windows_portable_nvidia.7z",
+        "$h = (Get-FileHash -Algorithm SHA256 ComfyUI_windows_portable_nvidia.7z).Hash.ToLower() ; if ($h -ne '4928f88e6a8407c4574d4f7d92cfeba020d782edba4a076b7d107ecc98955e50') { throw \"SHA256 校验失败，文件可能不完整，请重试\" }",
         "if (Get-Command 7z.exe -ErrorAction SilentlyContinue) { 7z x -y ComfyUI_windows_portable_nvidia.7z | Out-Null ; Write-Host '已解压到 ComfyUI_windows_portable' } else { Write-Host '未找到 7-Zip，请手动解压 ComfyUI_windows_portable_nvidia.7z' }"
       ],
       "source": "https://github.com/Comfy-Org/ComfyUI/releases/latest"
